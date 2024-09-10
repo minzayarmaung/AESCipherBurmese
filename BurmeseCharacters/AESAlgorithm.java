@@ -18,6 +18,8 @@ public class AESAlgorithm {
     public static boolean readAESKeys() {
         boolean exist = false;
         String[] keys = new String[2];
+
+        // You can change your Local Location as you want
         String filepath = "E:\\Development\\Java_Essential_Functions\\AESAlgorithm_Encryption\\BurmeseCharacters\\aesKeys";
 
         try (BufferedReader reader = new BufferedReader(new FileReader(filepath))) {
@@ -41,10 +43,6 @@ public class AESAlgorithm {
         if (isExist) {
 
             try {
-                // byte[] ivBytes = getHashByte(IV, "MD5");
-                // byte[] keyBytes = getHashByte(KEY, "SHA-256");
-                // byte[] keyBytes = getHashByte(KEY, "MD5");
-
                 byte[] ivBytes = IV.getBytes("UTF-8");
                 byte[] keyBytes = KEY.getBytes("UTF-8");
 
@@ -68,10 +66,6 @@ public class AESAlgorithm {
         if (isExist) {
 
             try {
-                // byte[] ivBytes = getHashByte(IV, "MD5");
-                // byte[] keyBytes = getHashByte(KEY, "SHA-256");
-                // byte[] keyBytes = getHashByte(KEY, "MD5");
-
                 byte[] ivBytes = IV.getBytes("UTF-8");
                 byte[] keyBytes = KEY.getBytes("UTF-8");
 
